@@ -37,4 +37,4 @@ Designed for evaluating ASR models on ATC speech, particularly fine-tuned Whispe
 
 ## License
 
-MIT
+[CC BY 4.0](LICENSE) — Creative Commons Attribution 4.0 International
