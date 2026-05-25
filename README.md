@@ -24,22 +24,22 @@ This dataset is designed as a **reference for evaluating pilot/controller agents
 
 ```
 pilot-readback-corpus/
-├── del/
+├── DEL/
 │   ├── corpus_wer_del.txt    # Human-readable transcript format
 │   └── corpus_wer_del.jsonl  # Structured rows (id, controller, pilot)
-├── gnd/
+├── GND/
 │   ├── corpus_wer_gnd.txt
 │   └── corpus_wer_gnd.jsonl
-└── twr/
+└── TWR/
     ├── corpus_wer_twr.txt
     └── corpus_wer_twr.jsonl
 ```
 
 | Phase | Files | Exchanges |
 |-------|-------|-----------|
-| DEL – Delivery | `del/corpus_wer_del.{txt,jsonl}` | 100 |
-| GND – Ground   | `gnd/corpus_wer_gnd.{txt,jsonl}` | 100 |
-| TWR – Tower    | `twr/corpus_wer_twr.{txt,jsonl}` | 100 |
+| DEL – Delivery | `DEL/corpus_wer_del.{txt,jsonl}` | 100 |
+| GND – Ground   | `GND/corpus_wer_gnd.{txt,jsonl}` | 100 |
+| TWR – Tower    | `TWR/corpus_wer_twr.{txt,jsonl}` | 100 |
 
 ## Format
 
@@ -76,7 +76,7 @@ Or read the JSONL files directly:
 import json
 from pathlib import Path
 
-rows = [json.loads(line) for line in Path("del/corpus_wer_del.jsonl").read_text(encoding="utf-8").splitlines()]
+rows = [json.loads(line) for line in Path("DEL/corpus_wer_del.jsonl").read_text(encoding="utf-8").splitlines()]
 ```
 
 ## Limitations and Considerations
